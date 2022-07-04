@@ -1,79 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="cv.css" />
-    <title>김윤서 이력서</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="menu-btn" href="#">홈</a></li>
-          <li><a class="menu-btn" href="#cv">이력서</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1 id="cv">이력서</h1>
-      <h2 id="name">김윤서</h2>
-      <section class="profile">
-        <img src="./profile.png" alt="엘리스 토끼 프로필" />
-      </section>
-      <div class="sub-container">
-        <section>
-          <h3 class="sub-title">인적사항</h3>
-          <div><strong>생년월일:</strong> 1996. 08. 24 | O형</div>
-          <div><strong>주소:</strong> 서울특별시 동대문구</div>
-          <div><strong>연락처:</strong> ttwperbox@gmail.com</div>
-        </section>
-        <section>
-          <h3 class="sub-title">학력사항</h3>
-          <ul>
-            <li>고등학교</li>
-            <li>대학교</li>
-            <li>대학원</li>
-          </ul>
-        </section>
-        <section>
-          <h3 class="sub-title">경력사항</h3>
-          <ol>
-            <li>경력1</li>
-            <li>경력2</li>
-            <li>경력3</li>
-          </ol>
-        </section>
-        <section>
-          <h3 class="sub-title">보유 스킬</h3>
-          <ul>
-            <li>
-              <a href="https://developer.mozilla.org/ko/docs/Web/HTML">
-                HTML
-              </a>
-            </li>
-            <li>
-              <a href="https://developer.mozilla.org/ko/docs/Web/CSS"> CSS </a>
-            </li>
-            <li>
-              <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">
-                JavaScript
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <p>
-        Author by: 김윤서 <br />
-      </p>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>계산기</title>
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <h2>계산기</h2>
+    <input type="button" value="1" onclick="printExpression(1)">
+    <input type="button" value="2" onclick="printExpression(2)">
+    <input type="button" value="3" onclick="printExpression(3)">
+    <input type="button" value="4" onclick="printExpression(4)">
+    <input type="button" value="5" onclick="printExpression(5)">
+    <input type="button" value="6" onclick="printExpression(6)">
+    <input type="button" value="7" onclick="printExpression(7)">
+    <input type="button" value="8" onclick="printExpression(8)">
+    <input type="button" value="9" onclick="printExpression(9)">
+    <h3>연산</h3>
+    <input type="button" value="+" onclick="printExpression('+')" >
+    <input type="button" value="-" onclick="printExpression('-')" >
+    <input type="button" value="*" onclick="printExpression('*')" >
+    <input type="button" value="/" onclick="printExpression('/')" >
+    <input type="button" value="%" onclick="printExpression('%')" >
+    <h2>식</h2>
+    <div id="expression"></div>
+    <input type="button" value = "계산하기" onclick="calculate()" >
+    <h2>정답</h2>
+    <div id="answer"></div>
+</body>
 </html>
