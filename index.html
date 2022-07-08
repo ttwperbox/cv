@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
-    <title>계산기</title>
+    <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
+    <title>김윤서 자기소개</title>
 </head>
 <body>
-
-    <h2>계산기</h2>
-    <input type="button" value="1" onclick="printExpression(1)">
-    <input type="button" value="2" onclick="printExpression(2)">
-    <input type="button" value="3" onclick="printExpression(3)">
-    <input type="button" value="4" onclick="printExpression(4)">
-    <input type="button" value="5" onclick="printExpression(5)">
-    <input type="button" value="6" onclick="printExpression(6)">
-    <input type="button" value="7" onclick="printExpression(7)">
-    <input type="button" value="8" onclick="printExpression(8)">
-    <input type="button" value="9" onclick="printExpression(9)">
-    <h3>연산</h3>
-    <input type="button" value="+" onclick="printExpression('+')" >
-    <input type="button" value="-" onclick="printExpression('-')" >
-    <input type="button" value="*" onclick="printExpression('*')" >
-    <input type="button" value="/" onclick="printExpression('/')" >
-    <input type="button" value="%" onclick="printExpression('%')" >
-    <h2>식</h2>
-    <div id="expression"></div>
-    <input type="button" value = "계산하기" onclick="calculate()" >
-    <h2>정답</h2>
-    <div id="answer"></div>
+    <header>
+        <nav>
+          <ul>
+            <li><a class="menu-btn" href="#">TOP</a></li>
+            <li><a class="menu-btn" href="#goal">목표</a></li>
+            <li><a class="menu-btn" href="#interest">관심분야</a></li>
+            <li><a class="menu-btn" href="#expectation">기대</a></li>
+            <li><a class="menu-btn" href="#one-word">한마디</a></li>
+            <li><a class="menu-btn" href="#likes">좋아하는 것</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2 id="goal">목표</h2>
+        <div>지금은 열심히 공부하는 것이 목표입니다😀</div>
+        <h2 id="interest">관심분야</h2>
+        <div>Python, SQL, 데이터 분석, 통계 등..</div>
+        <h2 id="expectation">기대</h2>
+        <div>프론트엔드와 백엔드는 물론 AI기술까지 경험해 볼 수 있다는 점에 매력을 느껴 AI 트랙에 지원했습니다! 어떤 것이 저와 맞는지 알아가고싶어요~</div>
+        <h2 id="one-word">한마디</h2>
+        <div>잘부탁드립니다!</div>
+        <h2 id="likes">좋아하는 것</h2>
+        <div>핫식스 더킹 포스 좋아해요~</div>
+      </main>
+      <footer>
+        <p>
+          최종 수정일: 2022-07-08<br>
+        </p>
+      </footer>
 </body>
 </html>
